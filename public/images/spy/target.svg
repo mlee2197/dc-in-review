@@ -1,0 +1,17 @@
+<svg width="196" height="197" viewBox="0 0 196 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="57.8599" y1="97.1449" x2="91.1292" y2="97.1449" stroke="white" stroke-width="4"/>
+<line x1="98.1919" y1="58.0713" x2="98.1919" y2="91.2184" stroke="white" stroke-width="4"/>
+<line x1="98.1919" y1="104.91" x2="98.1919" y2="138.057" stroke="white" stroke-width="4"/>
+<line x1="98.1919" y1="147.424" x2="98.1919" y2="180.571" stroke="white" stroke-width="4"/>
+<line x1="98.1919" y1="16.2772" x2="98.1919" y2="49.4243" stroke="white" stroke-width="4"/>
+<line x1="98.1919" y1="0.424316" x2="98.1919" y2="6.18902" stroke="white" stroke-width="4"/>
+<line x1="98.1919" y1="190.66" x2="98.1919" y2="196.424" stroke="white" stroke-width="4"/>
+<line x1="196" y1="98.2626" x2="190.214" y2="98.2626" stroke="white" stroke-width="4"/>
+<line x1="5.78589" y1="98.2626" x2="-8.9344e-05" y2="98.2626" stroke="white" stroke-width="4"/>
+<line x1="15.1881" y1="97.1449" x2="48.4575" y2="97.1449" stroke="white" stroke-width="4"/>
+<line x1="104.148" y1="97.1449" x2="137.417" y2="97.1449" stroke="white" stroke-width="4"/>
+<line x1="146.819" y1="97.1449" x2="180.088" y2="97.1449" stroke="white" stroke-width="4"/>
+<path d="M184.044 98.0641C184.044 145.388 145.535 183.777 98.0001 183.777C50.4652 183.777 11.9558 145.388 11.9558 98.0641C11.9558 50.7398 50.4652 12.3508 98.0001 12.3508C145.535 12.3508 184.044 50.7398 184.044 98.0641Z" stroke="white" stroke-width="8"/>
+<path d="M140.649 98.064C140.649 121.937 121.378 141.263 97.6384 141.263C73.899 141.263 54.6273 121.937 54.6273 98.064C54.6273 74.1911 73.899 54.8655 97.6384 54.8655C121.378 54.8655 140.649 74.1911 140.649 98.064Z" stroke="white" stroke-width="8"/>
+<ellipse cx="97.6384" cy="97.7038" rx="5.78598" ry="5.76471" fill="white"/>
+</svg>

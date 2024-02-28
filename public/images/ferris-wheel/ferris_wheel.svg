@@ -1,0 +1,27 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="150" cy="150" r="147.5" stroke="white" stroke-width="5"/>
+<line x1="150.5" y1="2" x2="150.5" y2="299" stroke="white" stroke-width="3"/>
+<line x1="225.549" y1="22.6452" x2="77.049" y2="279.855" stroke="white" stroke-width="3"/>
+<line x1="279.355" y1="77.549" x2="22.1452" y2="226.049" stroke="white" stroke-width="3"/>
+<line x1="298.5" y1="152" x2="1.5" y2="152" stroke="white" stroke-width="3"/>
+<line x1="277.855" y1="226.049" x2="20.6452" y2="77.549" stroke="white" stroke-width="3"/>
+<line x1="223.951" y1="278.855" x2="75.4509" y2="21.6451" stroke="white" stroke-width="3"/>
+<circle cx="150" cy="150" r="65" stroke="white" stroke-width="2"/>
+<circle cx="150.5" cy="150.5" r="59.5" stroke="white" stroke-width="2"/>
+<path d="M155 85L179.5 98.5" stroke="white" stroke-width="2"/>
+<path d="M183.814 94.332L199.927 117.198" stroke="white" stroke-width="2"/>
+<path d="M204.794 114.884L209.468 142.464" stroke="white" stroke-width="2"/>
+<path d="M214.532 142.14L207.237 169.145" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M210.823 171.668L195 190" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M195.367 196.246L173 205.526" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M171.197 211.304L147 210" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M139.16 213.832L119 201" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M110.215 200.911L100 182" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M91.9424 178.452L91 156" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M85 151L95 129" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M90 125.528L107.619 108.989" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M107 101.642L130.07 94.4473" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M131.057 88.1217L155.005 91.3653" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<circle cx="151" cy="152" r="12" fill="white"/>
+<circle cx="151" cy="152" r="17.5" stroke="white" stroke-width="3"/>
+</svg>
