@@ -7,7 +7,7 @@ const circleOffset = -15;
 const FerrisWheel = () => {
   return (
     <div className="relative max-h-full max-w-[90%] aspect-square mx-auto md:max-h-[33%] md:mt-auto">
-      <div className="relative animate-[spin_45s_linear_infinite] w-full h-full">
+      <div className="relative animate-[spin_45s_linear_infinite_reverse] w-full h-full">
         <Gondola leftPercent={0} />                                      {/* top left */}
         <Gondola leftPercent={centerOffset} topPercent={circleOffset} /> {/* top center */}
         <Gondola rightPercent={0} />                                     {/* top right */}

@@ -17,7 +17,7 @@ const Gondola = ({
     <div
       className={clsx(
         "absolute w-1/5 h-1/5 grid grid-rows-[2fr_5fr_3fr] ",
-        "animate-[spin_45s_linear_infinite_reverse]"
+        "animate-[spin_45s_linear_infinite]"
       )}
       style={{
         top: topPercent !== undefined ? `${topPercent}%` : undefined,
