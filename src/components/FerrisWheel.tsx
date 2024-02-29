@@ -6,17 +6,16 @@ const circleOffset = -15;
 
 const FerrisWheel = () => {
   return (
-    <div className="relative max-h-full max-w-[90%] aspect-square mx-auto">
-      <div className="animate-[spin_45s_linear_infinite] relative w-full h-full">
-        
-        <Gondola leftPercent={0} />  {/* top left */}
+    <div className="relative max-h-full max-w-[90%] aspect-square mx-auto md:max-h-[33%] md:mt-auto">
+      <div className="relative animate-[spin_45s_linear_infinite] w-full h-full">
+        <Gondola leftPercent={0} />                                      {/* top left */}
         <Gondola leftPercent={centerOffset} topPercent={circleOffset} /> {/* top center */}
-        <Gondola rightPercent={0} /> {/* top right */}
+        <Gondola rightPercent={0} />                                     {/* top right */}
         <Gondola topPercent={centerOffset} leftPercent={circleOffset} /> {/* middle left */}
         <Gondola topPercent={centerOffset} rightPercent={circleOffset} /> {/* middle right */}
-        <Gondola bottomPercent={0} leftPercent={0} /> {/* bottom left */}
+        <Gondola bottomPercent={0} leftPercent={0} />                     {/* bottom left */}
         <Gondola bottomPercent={circleOffset} rightPercent={centerOffset} /> {/* bottom center */}
-        <Gondola bottomPercent={0} rightPercent={0} /> {/* bottom right */}
+        <Gondola bottomPercent={0} rightPercent={0} />                       {/* bottom right */}
         <Image
           src="/images/ferris-wheel/ferris_wheel.svg"
           alt="ferris wheel"

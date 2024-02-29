@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/segments/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -17,6 +18,9 @@ const config: Config = {
         blue: {
           400: "#609efb", 
         }
+      },
+      fontFamily: {
+        concertOne: ["var(--concert-one)", "sans-serif"],
       }
     },
   },

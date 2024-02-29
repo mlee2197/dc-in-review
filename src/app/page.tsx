@@ -1,10 +1,16 @@
-import { FerrisWheel } from "@/components/FerrisWheel";
-import Image from "next/image";
+
+import { FerrisWheelScene } from "@/segments/FerrisWheelScene";
 
 export default function Home() {
   return (
-    <div className="fill-screen bg-blue-400">
-      <FerrisWheel />
+    <div className="fill-screen">
+      <FerrisWheelScene />
     </div>
   );
 }
+
+/**
+ * 1. animate ferris wheel up
+ * 2. animate text bounce in
+ * 3. show button to start
+ */

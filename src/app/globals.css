@@ -33,12 +33,22 @@ body {
 }
 
 @layer base {
-
+  h1 {
+    font-family: var(--concert-one);
+  }
 }
 
 @layer components {
   .fill-screen {
     height: 100dvh;
     width: 100dvw;
+  }
+
+  .button {
+    @apply bg-white text-black py-2 px-4 rounded-3xl hover:bg-black hover:text-white transition-colors;
+  }
+  
+  .button-outline {
+    @apply  border-2 border-white text-white py-2 px-4 rounded-3xl transition-colors hover:bg-white hover:text-black;
   }
 }
