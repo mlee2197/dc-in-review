@@ -12,9 +12,15 @@ export default function Explore() {
       <div className="relative">
         <CloudCover showInitial />
         <FerrisWheelScroll />
-        <div className="fill-screen"/>
+        <div className="fill-screen flex justify-end items-center">
+          <h1 className="flex gap-4 pr-20 text-right text-3xl">
+            <span className="inline-block animate-bounce">↓</span>
+            Scroll
+            <span className="inline-block animate-bounce">↓</span>
+          </h1>
+        </div>
         <SpyKaleidoscope />
-        <div className="fill-screen"/>
+        <div className="fill-screen" />
       </div>
     </div>
   );
