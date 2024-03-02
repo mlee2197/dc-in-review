@@ -1,6 +1,9 @@
 "use client";
 import { CloudCover } from "@/components/CloudCover";
 import { FerrisWheelScroll } from "@/components/FerrisWheelScroll";
+import { Concert } from "@/segments/Concert";
+import { EscapeRoom } from "@/segments/EscapeRoom";
+import { MonumentScene } from "@/segments/MonumentScene";
 import { SpyKaleidoscope } from "@/segments/SpyKaleidoscope";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -20,7 +23,9 @@ export default function Explore() {
           </h1>
         </div>
         <SpyKaleidoscope />
-        <div className="fill-screen" />
+        <EscapeRoom />
+        <Concert />
+        <MonumentScene />
       </div>
     </div>
   );

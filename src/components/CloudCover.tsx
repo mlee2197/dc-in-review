@@ -28,7 +28,7 @@ const CloudCover = ({ showInitial }: CloudCoverProps) => {
       ref={container}
       id="cloud-cover"
       className={clsx(
-        "absolute flex w-screen h-[150vh] top-0",
+        "fixed flex w-screen h-[150vh] top-0 z-10",
         showInitial
           ? "flex-col-reverse -translate-y-0"
           : "flex-col translate-y-full"
