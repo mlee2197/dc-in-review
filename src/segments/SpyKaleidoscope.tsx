@@ -23,12 +23,12 @@ const umbrellaPositions = [
   { x: 75, y: 75 },
 ];
 const bulletCirclePositions = [
-  { x: 10, y: -30 },
-  { x: 20, y: 0 },
-  { x: 10, y: 30 },
-  { x: -10, y: 30 },
-  { x: -20, y: 0 },
-  { x: -10, y: -30 },
+  { x: 47, y: -85 },
+  { x: 85, y: 0 },
+  { x: 47, y: 85 },
+  { x: -47, y: 85 },
+  { x: -85, y: 0 },
+  { x: -47, y: -85 },
 ];
 const suitcasePositions = [
   { x: 50, y: -230 },

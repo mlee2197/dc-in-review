@@ -35,7 +35,7 @@ const BulletCircle = ({
       const bullets = gsap.utils.toArray((circleRef.current as any).children);
       bullets.forEach((bullet, i) => {
         const angle = -i * (360 / 6);
-        gsap.set(bullet as any, { transformOrigin: "50% 0%", yPercent: 50 });
+        gsap.set(bullet as any, { transformOrigin: "50% 0%" });
         tl.to(
           bullet as any,
           {
@@ -51,8 +51,8 @@ const BulletCircle = ({
   return (
     <div
       ref={circleRef}
-      className="flex items-center justify-center absolute w-[20%] aspect-square -translate-x-1/2 -translate-y-1/2"
-      style={{ left: `${xOffset + 50}%`, top: `${yOffset + 50}%` }}
+      className="flex items-end justify-center absolute w-[20%] aspect-square"
+      style={{ translate: `${xOffset}% ${yOffset - 8}%` }}
     >
       {Array.from({ length: 6 }).map((_, i) => (
         <Bullet key={`bullet-${i}`} />
