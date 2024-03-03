@@ -60,4 +60,12 @@ body {
   .text-row {
     @apply absolute text-2xl text-nowrap;
   }
+
+  .day {
+    @apply flex mx-auto p-6 h-[30vh] w-screen md:max-w-[460px] md:w-[50vw];
+  }
+
+  .divider {
+    @apply h-28 w-[3px] bg-white mx-6 rounded-sm;
+  }
 }
