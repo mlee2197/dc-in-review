@@ -30,6 +30,7 @@ export const useGondolaScene = (
           xPercent: 0,
           scale: 1,
         })
+        .to(".title", { opacity: 0.35 })
         .to(".gondola", { xPercent: initialX, scale: initialScale });
 
       const sceneTl = gsap.timeline({

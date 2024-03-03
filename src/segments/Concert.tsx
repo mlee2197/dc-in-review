@@ -96,7 +96,7 @@ export const Concert = () => {
 
   return (
     <div ref={containerRef} className="scene-container">
-      <LargeGondola>
+      <LargeGondola title="Echostage: Crankdat w/ Jessica Audiffred & ALLEYCVT">
         <div className="relative flex items-center justify-center h-full w-full bg-black overflow-hidden">
           <ConcertStage />
           <ConcertLight />
@@ -114,6 +114,7 @@ export const Concert = () => {
               height={200}
               className="object-contain"
             />
+            {/* <a href="https://www.vecteezy.com/free-vector/party">Party Vectors by Vecteezy</a> */}
           </div>
         </div>
       </LargeGondola>

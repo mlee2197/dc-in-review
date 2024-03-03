@@ -100,7 +100,7 @@ const SpyKaleidoscope = () => {
       ref={container}
       className="scene-container"
     >
-      <LargeGondola>
+      <LargeGondola title="Museum of Illusions & International Spy Museum">
         <div className="relative flex items-center justify-center h-full w-full bg-black overflow-hidden">
           <Target />
           {Array.from({ length: numUmbrellas }).map((_, i) => (

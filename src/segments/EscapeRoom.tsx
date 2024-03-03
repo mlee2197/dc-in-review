@@ -54,7 +54,7 @@ export const EscapeRoom = () => {
 
   return (
     <div ref={containerRef} className="scene-container">
-      <LargeGondola>
+      <LargeGondola title="Escape Room Live - Alexandria">
         <div className="relative flex items-end justify-center h-full w-full bg-black overflow-hidden">
           <div className="flex items-end">
             <Clock />
