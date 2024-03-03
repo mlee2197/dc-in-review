@@ -7,7 +7,7 @@ const LargeGondola = ({ children, title }: LargeGondolaProps) => {
   return (
     <div
       className={
-        "gondola h-full max-w-screen min-w-[400px] w-1/2 grid grid-rows-[2fr_6fr_2fr]"
+        "gondola h-full max-w-screen min-w-[400px] w-1/2 grid grid-rows-[2fr_6fr_2fr] md:max-w-[60vw]"
       }
     >
       <div

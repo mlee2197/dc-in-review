@@ -50,9 +50,7 @@ export const MonumentScene = () => {
   };
 
   const containerRef = useGondolaScene(timelineAnimation);
-  // #6B85FF #7A6FFF #8E59FF #A041FF
-  // #609EFB #708CFF #818AFF #9178FF #A167FF
-  // #7AA3FF #93A8FF // #ADBFFF // #C7CFFF
+
   return ( 
     <div ref={containerRef} className="scene-container from-[#341358] to-[#150e5c] bg-gradient-to-b">
       <LargeGondola title="Washington Monument">

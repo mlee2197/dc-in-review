@@ -2,6 +2,7 @@ import { CloudCover } from "@/components/CloudCover";
 import { FerrisWheelScroll } from "@/components/FerrisWheelScroll";
 import { Concert } from "@/segments/Concert";
 import { EscapeRoom } from "@/segments/EscapeRoom";
+import { FinalScene } from "@/segments/FinalScene";
 import { MonumentScene } from "@/segments/MonumentScene";
 import { SpyKaleidoscope } from "@/segments/SpyKaleidoscope";
 
@@ -22,6 +23,7 @@ export default function Explore() {
         <EscapeRoom />
         <Concert />
         <MonumentScene />
+        <FinalScene />
       </div>
     </div>
   );

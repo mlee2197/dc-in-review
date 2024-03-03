@@ -56,4 +56,8 @@ body {
   .scene-container {
     @apply flex flex-col justify-center items-center fill-screen;
   }
+
+  .text-row {
+    @apply absolute text-2xl text-nowrap;
+  }
 }
