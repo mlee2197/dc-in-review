@@ -35,7 +35,7 @@ const CloudCover = ({ showInitial }: CloudCoverProps) => {
       )}
     >
       <Image
-        src="/images/ferris-wheel/cloud3.svg"
+        src="/images/clouds/cloud3.svg"
         alt="cloud cover"
         width={2000}
         height={250}

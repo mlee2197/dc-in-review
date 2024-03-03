@@ -95,7 +95,7 @@ export const FerrisWheelScene = () => {
         className="absolute w-1/2 bg-red top-[5%] right-0 translate-x-full drop-shadow-lg"
       >
         <Image
-          src={"/images/ferris-wheel/cloud1.svg"}
+          src={"/images/clouds/cloud1.svg"}
           height={250}
           width={500}
           alt="cloud"
@@ -107,7 +107,7 @@ export const FerrisWheelScene = () => {
         className="absolute w-1/2 bg-red top-[40%] -translate-x-full drop-shadow-lg"
       >
         <Image
-          src={"/images/ferris-wheel/cloud2.svg"}
+          src={"/images/clouds/cloud2.svg"}
           height={250}
           width={500}
           alt="cloud"
