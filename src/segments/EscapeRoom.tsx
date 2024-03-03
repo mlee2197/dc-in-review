@@ -53,7 +53,7 @@ export const EscapeRoom = () => {
   const containerRef = useGondolaScene(timelineAnimation);
 
   return (
-    <div ref={containerRef} className="scene-container">
+    <div ref={containerRef} className="scene-container from-[#8a8aff] to-[#9c2a4b] bg-gradient-to-b">
       <LargeGondola title="Escape Room Live - Alexandria">
         <div className="relative flex items-end justify-center h-full w-full bg-black overflow-hidden">
           <div className="flex items-end">

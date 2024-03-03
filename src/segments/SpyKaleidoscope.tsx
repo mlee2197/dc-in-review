@@ -98,7 +98,7 @@ const SpyKaleidoscope = () => {
   return (
     <div
       ref={container}
-      className="scene-container"
+      className="scene-container from-blue-400 to-[#8a8aff] bg-gradient-to-b"
     >
       <LargeGondola title="Museum of Illusions & International Spy Museum">
         <div className="relative flex items-center justify-center h-full w-full bg-black overflow-hidden">

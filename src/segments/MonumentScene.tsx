@@ -50,9 +50,11 @@ export const MonumentScene = () => {
   };
 
   const containerRef = useGondolaScene(timelineAnimation);
-
-  return (
-    <div ref={containerRef} className="scene-container">
+  // #6B85FF #7A6FFF #8E59FF #A041FF
+  // #609EFB #708CFF #818AFF #9178FF #A167FF
+  // #7AA3FF #93A8FF // #ADBFFF // #C7CFFF
+  return ( 
+    <div ref={containerRef} className="scene-container from-[#341358] to-[#150e5c] bg-gradient-to-b">
       <LargeGondola title="Washington Monument">
         <div className="relative grid grid-rows-5 h-full w-full bg-black overflow-hidden">
           <div className="monument relative flex items-end justify-center row-span-3 -mb-1">
