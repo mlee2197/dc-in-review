@@ -14,7 +14,7 @@ export const Concert = () => {
     const lightsLeft = lights.slice(0, half);
     const lightsRight = lights.slice(-half);
 
-    gsap.set(".dj", { opacity: 0 });
+    gsap.set(".dj", { opacity: 0,});
     gsap.set(lights, { transformOrigin: "center bottom" });
     lightsLeft.forEach((light, i) => {
       gsap.set(light as HTMLElement, {
@@ -89,13 +89,27 @@ export const Concert = () => {
         },
         "<"
       )
-      .to(".crowd", { yPercent: -60, ease: "elastic.out(0.75,0.2)", duration: 2 });
+      .to(".dj", {
+        scale: 1.25,
+        repeat: 1,
+        yoyo: true,
+        ease: "power1.inOut",
+        duration: 0.35,
+      }, "<+=0.2")
+      .to(".crowd", {
+        yPercent: -60,
+        ease: "elastic.out(0.75,0.2)",
+        duration: 2,
+      });
   };
 
   const containerRef = useGondolaScene(timelineAnimation);
 
   return (
-    <div ref={containerRef} className="scene-container from-[#b33b3b] to-[#341358] bg-gradient-to-b">
+    <div
+      ref={containerRef}
+      className="scene-container from-[#b33b3b] to-[#341358] bg-gradient-to-b"
+    >
       <LargeGondola title="Echostage: Crankdat w/ Jessica Audiffred & ALLEYCVT">
         <div className="relative flex items-center justify-center h-full w-full bg-black overflow-hidden">
           <ConcertStage />

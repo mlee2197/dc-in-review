@@ -70,7 +70,7 @@ export const FinalScene = () => {
     >
       <LargeGondola title="Itinerary">
         <Link href="/itinerary">
-          <div className="relative flex items-center justify-center h-full w-full bg-black overflow-hidden md:max-w-[750px]">
+          <div className="relative flex items-center justify-center h-full w-full bg-black overflow-hidden">
             {Array.from({ length: NUM_ROWS }).map((_, i) => (
               <div
                 key={i}
