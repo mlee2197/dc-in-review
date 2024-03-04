@@ -92,7 +92,7 @@ export const FerrisWheelScene = () => {
       </div>
       <div
         id="cloud-1"
-        className="absolute w-1/2 bg-red top-[5%] right-0 translate-x-full drop-shadow-lg"
+        className="absolute w-1/4 bg-red top-[5%] right-0 translate-x-full drop-shadow-lg"
       >
         <Image
           src={"/images/clouds/cloud1.svg"}
