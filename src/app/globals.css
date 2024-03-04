@@ -62,7 +62,7 @@ body {
   }
 
   .day {
-    @apply flex mx-auto p-6 h-[30vh] w-screen md:max-w-[460px] md:w-[50vw];
+    @apply flex mx-auto p-6 w-screen md:max-w-[460px] md:w-[50vw];
   }
 
   .divider {
