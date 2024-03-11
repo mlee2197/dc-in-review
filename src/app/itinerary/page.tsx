@@ -43,8 +43,8 @@ const ITINERARY_DATA = [
     "Echostage: Crankdat w/ Jessica Audiffred & ALLEYCVT",
   ],
   [
-    "Roosevelt Island (cancelled)",
-    "Washington Monument walk (cancelled)",
+    "Roosevelt Island (rained out)",
+    "Washington Monument walk (rained out)",
     {
       text: "The District Fishwife",
       url: "https://maps.app.goo.gl/iYjvbmPwYi987KmMA",
