@@ -36,6 +36,7 @@ const ITINERARY_DATA = [
     { text: "Puddin'", url: "https://maps.app.goo.gl/Ceb2fYgLNdtUBM5e8" },
     { text: "Dan Dan Boy", url: "https://maps.app.goo.gl/g1QwpNMNsaXvRBtd6" },
     { text: "Spot of Tea", url: "https://maps.app.goo.gl/A8y2TFMyvpefAKya6" },
+    { text: "Arboretum", url: "https://maps.app.goo.gl/4SjppDjFbcjLSE7H6" },
     {
       text: "Roaming Rooster",
       url: "https://maps.app.goo.gl/NrUN7vNDGHZeNVkH8",
