@@ -4,22 +4,69 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useRef } from "react";
 
 const ITINERARY_DATA = [
-  ["Museum of Illusions", "International Spy Museum"],
-  ["Escape Room Live - Alexandria", "The Capital Wheel"],
-  ["Union Market", "Echostage: Crankdat w/ Jessica Audiffred & ALLEYCVT"],
-  ["Roosevelt Island", "Washington Monument walk"],
+  [
+    { text: "Cafe Fili", url: "https://maps.app.goo.gl/seyqGo8U8zKRRMvX8" },
+    "Museum of Illusions",
+    "International Spy Museum",
+    {
+      text: "Stellina Pizzeria",
+      url: "https://maps.app.goo.gl/kXygiqZZoyWqRrGQ8",
+    },
+  ],
+  [
+    {
+      text: "Buffalo & Bergen",
+      url: "https://maps.app.goo.gl/pYjC1RzX71rAPLqK6",
+    },
+    { text: "Sharetea", url: "https://maps.app.goo.gl/U6nAbCA12wsokZEQA" },
+    "Escape Room Live - Alexandria",
+    "The Capital Wheel",
+    { text: "Urbano 116", url: "https://maps.app.goo.gl/3vQQid4L9VczXpib7" },
+    {
+      text: "Jeni's Splendid Ice Creams",
+      url: "https://maps.app.goo.gl/kBGzwLobEjmCeoex5",
+    },
+  ],
+  [
+    "Union Market",
+    { text: "Puddin'", url: "https://maps.app.goo.gl/Ceb2fYgLNdtUBM5e8" },
+    { text: "Dan Dan Boy", url: "https://maps.app.goo.gl/g1QwpNMNsaXvRBtd6" },
+    { text: "Spot of Tea", url: "https://maps.app.goo.gl/A8y2TFMyvpefAKya6" },
+    {
+      text: "Roaming Rooster",
+      url: "https://maps.app.goo.gl/NrUN7vNDGHZeNVkH8",
+    },
+    "Echostage: Crankdat w/ Jessica Audiffred & ALLEYCVT",
+  ],
+  [
+    "Roosevelt Island (cancelled)",
+    "Washington Monument walk (cancelled)",
+    {
+      text: "The District Fishwife",
+      url: "https://maps.app.goo.gl/iYjvbmPwYi987KmMA",
+    },
+    {
+      text: "Buffalo & Bergen",
+      url: "https://maps.app.goo.gl/7v69nGkB2vEDxH8F9",
+    },
+    {
+      text: "South Block",
+      url: "https://maps.app.goo.gl/JG19JXtZxqpswNxr9",
+    },
+    {
+      text: "Pho 72",
+      url: "https://maps.app.goo.gl/1vY6uQpMgvhedkf69",
+    },
+  ],
 ];
 
 export default function Itinerary() {
-  // create scroll scrub animation for days
-  // add cloud images
-  // create scroll scrub animation for cloud images/
-  // add mobile styles for clouds
-
   const page = useRef(null);
+  const router = useRouter();
 
   useGSAP(
     () => {
@@ -85,7 +132,17 @@ export default function Itinerary() {
           <ul className="basis-2/3">
             {day.map((activity, j) => (
               <li key={j} className="text-lg md:text-xl">
-                {activity}
+                {typeof activity === "string" ? (
+                  activity
+                ) : (
+                  <a
+                    href={activity.url}
+                    target="_blank"
+                    rel="noopenner noreferrer"
+                  >
+                    {activity.text}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -99,6 +156,9 @@ export default function Itinerary() {
         width={400}
         height={200}
         className="cloud absolute top-1/4 -left-[50%] opacity-25 md:opacity-0 md:left-0"
+        onClick={() => {
+          router.push("/snapshots");
+        }}
       />
       <Image
         src="/images/clouds/cloud5.svg"
