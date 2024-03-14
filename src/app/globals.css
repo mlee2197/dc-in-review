@@ -46,11 +46,11 @@ body {
   }
 
   .button {
-    @apply bg-white text-black py-2 px-4 rounded-3xl hover:bg-black hover:text-white transition-colors;
+    @apply flex items-center justify-center bg-white text-black py-2 px-4 rounded-3xl hover:bg-black hover:text-white transition-colors;
   }
   
   .button-outline {
-    @apply  border-2 border-white text-white py-2 px-4 rounded-3xl transition-colors hover:bg-white hover:text-black;
+    @apply flex items-center justify-center border-2 border-white text-white py-2 px-4 rounded-3xl transition-colors hover:bg-white hover:text-black;
   }
 
   .scene-container {
