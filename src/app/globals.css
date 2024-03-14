@@ -58,7 +58,7 @@ body {
   }
 
   .text-row {
-    @apply absolute text-2xl text-nowrap;
+    @apply absolute text-xl text-nowrap md:text-2xl;
   }
 
   .day {

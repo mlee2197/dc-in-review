@@ -6,9 +6,7 @@ import clsx from "clsx";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
-
-const NUM_ROWS = 11;
-const WORDS_PER_ROW = 11;
+import { useState } from "react";
 
 const ARROW_MATRIX = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -24,7 +22,24 @@ const ARROW_MATRIX = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
 
+const MOBILE_ARROW_MATRIX = [
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 1, 0, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 1, 1, 1, 1, 1, 0, 0],
+  [0, 0, 0, 0, 0, 1, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0],
+];
+
 export const FinalScene = () => {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const ArrowMatrix = isMobile ? MOBILE_ARROW_MATRIX : ARROW_MATRIX;
+
   const timelineAnimation = (tl: gsap.core.Timeline) => {
     const textRows = gsap.utils.toArray(".text-row");
 
@@ -52,7 +67,7 @@ export const FinalScene = () => {
         showTl.to(word as any, { duration: 0.5 }, "-=0.45");
         hideTl.to(
           word as any,
-          ARROW_MATRIX[i][j] === 0 ? hideValues : showValues,
+          ArrowMatrix[i][j] === 0 ? hideValues : showValues,
           "-=0.45"
         );
       });
@@ -71,17 +86,17 @@ export const FinalScene = () => {
       <LargeGondola title="Itinerary">
         <Link href="/itinerary">
           <div className="relative flex items-center justify-center h-full w-full bg-black overflow-hidden">
-            {Array.from({ length: NUM_ROWS }).map((_, i) => (
+            {Array.from({ length: ArrowMatrix.length }).map((_, i) => (
               <div
                 key={i}
                 className="text-row divide-x-4"
-                style={{ top: `${i * (100 / NUM_ROWS)}%` }}
+                style={{ top: `${i * (100 / ArrowMatrix.length)}%` }}
               >
-                {Array.from({ length: WORDS_PER_ROW }).map((_, j) => (
+                {Array.from({ length: ArrowMatrix[0].length }).map((_, j) => (
                   <div
                     key={j}
                     className={clsx(
-                      ARROW_MATRIX[i][j] === 0 && "animate-word",
+                      ArrowMatrix[i][j] === 0 && "animate-word",
                       "inline-block text-white opacity-25 border-transparent"
                     )}
                   >
