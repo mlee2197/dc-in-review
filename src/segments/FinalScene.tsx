@@ -89,7 +89,7 @@ export const FinalScene = () => {
             {Array.from({ length: ArrowMatrix.length }).map((_, i) => (
               <div
                 key={i}
-                className="text-row divide-x-4"
+                className="text-row divide-x-2 md:divide-x-4"
                 style={{ top: `${i * (100 / ArrowMatrix.length)}%` }}
               >
                 {Array.from({ length: ArrowMatrix[0].length }).map((_, j) => (
